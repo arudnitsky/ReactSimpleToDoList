@@ -4,11 +4,9 @@
   "private": true,
   "main": "src/index.tsx",
   "dependencies": {
-    "prop-types": "15.6.2",
     "react": "16.4.1",
-    "react-autobind": "1.0.6",
     "react-dom": "16.4.1",
-    "react-scripts-ts": "^2.13.0"
+    "react-scripts-ts": "2.16.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",

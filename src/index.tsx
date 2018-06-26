@@ -1,31 +1,35 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import ToDoItemList from './components/ToDoItemList';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import ToDoList from './components/ToDoList';
+import ToDoAppHeader from './components/ToDoAppHeader';
 
 import './styles.css';
 
-const toDoList = [
-  { title: 'Water plants', isDone: false },
-  { title: 'Mow lawn', isDone: false },
-  { title: 'Weed garden', isDone: true },
-  { title: 'Feed dog', isDone: true }
-];
-
-/*const todoList = [
+const toDoLists = [
   {
-    listTitle: "Home",
+    listTitle: "Home Tasks",
     listItems: [
-      { title: "Water plants", isDone: false },
-      { title: "Mow lawn", isDone: false },
-      { title: "Weed garden", isDone: true },
+      { title: "Hang pictures", isDone: false },      
+      { title: "Pay bills", isDone: false },
       { title: "Feed dog", isDone: true }
     ]
+  },
+  {
+    listTitle: "Garden Tasks",
+    listItems: [
+      { title: "Water plants", isDone: false },
+      { title: "Mow lawn", isDone: true },
+      { title: "Weed garden", isDone: true }
+    ]
   }
-];*/
+];
 
 const App = () => (
   <div className="App">
-    <ToDoItemList toDoList={toDoList} />
+    <CssBaseline />
+    <ToDoAppHeader />
+    <ToDoList toDoListModels={toDoLists} />
   </div>
 );
 
