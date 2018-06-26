@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.todo-item-row {
+  display: flex;
+  align-items: center;
+  height: 1.5em;
+}
+
+.todo-item-checkbox {
+  width: 50px;
+}
+
+.todo-item-list-header {
+  display: flex;
+  height: 1.6em;
+  align-items: center;
+  font-weight: 600;
+  background-color: lightblue;
+}
+
+.todo-item-list-header-done {
+  width: 50px;
+}
