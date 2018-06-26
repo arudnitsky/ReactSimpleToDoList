@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import ToDoItemList from './ToDoItemList';
+import ToDoItemList from './components/ToDoItemList';
 
 import './styles.css';
 

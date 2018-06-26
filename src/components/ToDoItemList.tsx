@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ToDoItem from './ToDoItem';
-import ToDoListItemsModel from './ToDoListItemsModel';
+import ToDoListItemModel from '../models/ToDoListItemModel';
 
 export default class ToDoItemList extends React.Component<ToDoListItemsProps> {
   render() {
@@ -8,7 +8,6 @@ export default class ToDoItemList extends React.Component<ToDoListItemsProps> {
 
     return (
       <div>
-        title goes here<div className="todo-list-title" />
         <div className="todo-item-list-header">
           <div className="todo-item-list-header-done">Done</div>
           <div className="todo-item-list-header-title">Title</div>
@@ -22,5 +21,5 @@ export default class ToDoItemList extends React.Component<ToDoListItemsProps> {
 }
 
 export interface ToDoListItemsProps {
-  toDoList: ToDoListItemsModel[];
+  toDoList: ToDoListItemModel[];
 }
