@@ -9,7 +9,7 @@ export default class ToDoList extends React.Component<ToDoListProps> {
     return (
       toDoListModels.map(list => (
         <div className='todo-list'>
-          <div className='to-do-list-title'>
+          <div className='todo-list-title'>
             {list.listTitle}
           </div>
           <ToDoItemList toDoList={list.listItems} />

@@ -1,10 +1,9 @@
-.App {
+.appheader {
   font-family: sans-serif;
-  /*text-align: center;*/
 }
 
 .todo-item-container {
-  background-color: lightgray;
+  /*background-color: lightgray;*/
 }
 
 .todo-item-row {
@@ -21,8 +20,8 @@
   display: flex;
   height: 1.6em;
   align-items: center;
-  font-weight: 600;
-  background-color: lightblue;
+  /*font-weight: 600;*/
+  /*background-color: lightblue;*/
 }
 
 .todo-item-list-header-done {
@@ -30,10 +29,10 @@
 }
 
 .todo-list {
-  background-color: gray;
+  /*background-color: gray;*/
 }
 
-.to-do-list-title {
+.todo-list-title {
   font-size: 1.5em;
   text-align: left;
 }
