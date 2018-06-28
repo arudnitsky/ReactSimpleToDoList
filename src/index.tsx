@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import * as uuid  from 'uuid';
 import ToDoList from './components/ToDoList';
-import ToDoAppHeader from './components/ToDoAppHeader';
 
 import './styles.css';
 
 const toDoLists = [
   {
+    key: uuid.v4(),
     listTitle: "Home Tasks",
     listItems: [
       { title: "Hang pictures", isDone: false },      
@@ -16,6 +16,7 @@ const toDoLists = [
     ]
   },
   {
+    key: uuid.v4(),
     listTitle: "Garden Tasks",
     listItems: [
       { title: "Water plants", isDone: false },
@@ -27,8 +28,6 @@ const toDoLists = [
 
 const App = () => (
   <div className="App">
-    <CssBaseline />
-    <ToDoAppHeader />
     <ToDoList toDoListModels={toDoLists} />
   </div>
 );
