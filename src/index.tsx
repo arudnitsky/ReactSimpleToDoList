@@ -2,7 +2,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import * as uuid  from 'uuid';
 import ToDoAppHeader from './components/ToDoAppHeader';
-
+import ToDoList from './components/ToDoList';
 
 import './styles.css';
 
@@ -28,7 +28,10 @@ const toDoLists = [
 ];
 
 const App = () => (
-  <ToDoAppHeader toDoListModels={toDoLists} />
+  <div className="app">
+    <ToDoAppHeader />
+    <ToDoList toDoListModels={toDoLists} />
+  </div>
 );
 
 render(<App />, document.getElementById('root'));

@@ -1,19 +1,17 @@
 import * as React from 'react';
-import ToDoList from './ToDoList';
-import ToDoListModel from '../models/ToDoListModel';
+import AddListButton from './AddListButton';
 
-export default class AppHeader extends React.Component<AppHeaderProps> {
+export default class ToDoAppHeader extends React.Component {
   render() {
-    const { toDoListModels } = this.props;
     return (
       <div className="appheader">
-        <h1>Simple React ToDoList</h1>
-        <ToDoList toDoListModels={toDoListModels} />
+        <div>
+          <h1>Simple React ToDoList</h1>
+        </div>
+        <div>
+          <AddListButton />
+        </div>
       </div>
     );
   }
-}
-
-export interface AppHeaderProps {
-  toDoListModels: ToDoListModel[];
 }

@@ -1,5 +1,14 @@
-.appheader {
+.app {
   font-family: sans-serif;
+}
+
+.appheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appheader-add-list-button {
 }
 
 .todo-item-container {
@@ -36,3 +45,4 @@
   font-size: 1.5em;
   text-align: left;
 }
+
